@@ -1,0 +1,17 @@
+#aboutus-body{
+    width:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:20px;
+}
+.first{
+    margin-top:20px;
+}
+.about-card{
+    width:60%;
+    height:400px;
+    border: 1px solid black;
+}
