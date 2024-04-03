@@ -15,29 +15,7 @@ box-sizing:border-box;
     src: url("./assets/Poppins-Regular.ttf");
 }
 
-#header-container{
-    margin-left:auto;
-    width:50%;
-    height:100%;
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:center;
-    gap:10%;
-}
 
-main{
-    flex:5;
-    order:1;
-    min-width:100%;
-    min-height:90vh;
-}
-.header-logo{
-width:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
+
+
+

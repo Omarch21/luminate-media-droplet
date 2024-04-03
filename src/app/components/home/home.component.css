@@ -118,7 +118,7 @@ h2{
 }
 .wwd-container{
     height:50vh;
-    background: url("../../assets/beanstalk-dark.webp");
+    background: url("../../../assets/beanstalk-dark.webp");
     color:white;
     display:flex;
     justify-content:center;
@@ -129,7 +129,7 @@ h2{
     flex-direction:column;
     text-align:center;
     height:400px;
-    background: url("../../assets/prism.png");
+    background: url("../../../assets/prism.png");
     padding:10px;
     align-items:center;
 }
@@ -168,15 +168,11 @@ h2{
     font-size:20px;
 }
 .video-container{
-    display:flex;
-    justify-content:center;
-    gap:200px;
-    align-items:center;
-    height:900px;
+    height:100%;
     width:100%;
    
 }
-.video-img{
-    height:200px;
-    width:200px;
+.landing-video{
+    width:100%;
+
 }
