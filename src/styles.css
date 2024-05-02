@@ -15,7 +15,21 @@ box-sizing:border-box;
     src: url("./assets/Poppins-Regular.ttf");
 }
 
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(241, 241, 241);
+    border-radius:5px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background:#DA3832;
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#a12925;
+}
 
-
-
-
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
