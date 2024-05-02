@@ -1,0 +1,20 @@
+#tutorial-body{
+    width:100%;
+    height:80vh;
+    display:flex;
+    
+    align-items:center;
+    flex-direction:column;
+    
+}
+
+.tutorial-video{
+    width:50%;
+    height:80%;
+}
+@media (max-width:600px){
+    .tutorial-video{
+        width: 80%;
+        height:50%;
+    }
+}

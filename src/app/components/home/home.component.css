@@ -1,11 +1,28 @@
 #wrapper{
     width:100%;
     height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:Center;
+}
+.background{
+    background-image: url("../../../assets/Website_Background.jpg");
+    background-size:cover;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+ 
 }
 .img-expand{
+
     width:100%;
     height:100%;
     object-fit:cover;
+    background-image: url("../../../assets/_DSC9014-HDR.jpg");
+    border-radius:10px;
 }
 .hidden{
     opacity: 0;
@@ -54,43 +71,77 @@
     justify-content:space-evenly;
     height:100%;
     align-items:Center;
+   
 }
 .what-we-do{
     text-align:center;
     width:60%;
     padding:20px;
-}
-
-.offer{
+    min-height:500px;
     display:flex;
-    justify-content:space-evenly;
-    height:125vh;
-    width:100%;
-}
-.offer-column{
-    height:100%;
-    width:20%;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items:center;
 }
-.offer-column div{
-    height:40%;
-width:100%;
-color:white;
+.what-we-do p{
+    font-size:20px;
 }
-.offer-card{
+.offer{
+    display:flex;
+    
+    max-height:250vh;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+}
+.offer-header{
+    
+    padding-bottom:10px;
+    margin-bottom:30px;
+    text-align:center;
+    text-decoration:underline;
+    font-size:38px;
+}
+
+.offer-column{
     height:100%;
+    width:80%;
+    gap:3%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+.c-text h2{
+font-size:24px;
+text-align: start;
+color:black;
+}
+.c-text{
+    width:93%;
+    height:25%;
+}
+
+.offer-card{
+    width:25%;
+    height:250px;
     display:flex;
     flex-direction:column;
-    border:1px black solid;
+    border:1px rgb(189, 189, 189) solid;
+    background-color:rgb(243, 243, 243);
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    box-shadow: 1px 1px 3px rgb(112, 112, 112); 
+    margin-bottom:10px;
 }
 .offer-image{
-    min-height:80%;
-    background-color:black;
-    width:100%;
+    padding:12px;
+    height:100%;
+   width:100%;
+    
+    
+    border-radius:10px;
 }
 h2{
     color:black;
@@ -100,7 +151,6 @@ h2{
     height:200px;
     display:flex;
     flex-direction:row;
-    background-color:white;
     color:black;
     justify-content:center;
     align-items:center;
@@ -116,20 +166,13 @@ h2{
     text-align:center;
     
 }
-.wwd-container{
-    height:50vh;
-    background: url("../../assets/beanstalk-dark.webp");
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+
 .testimonials{
     display:flex;
     flex-direction:column;
     text-align:center;
     height:400px;
-    background: url("../../assets/prism.png");
+    background: url("../../../assets/prism.png");
     padding:10px;
     align-items:center;
 }
@@ -153,30 +196,64 @@ h2{
     max-height:90vh;
     object-fit:cover
 }
-.loremm{
+.wcl-container{
     display:flex;
     flex-direction:column;
-    background-color:black;
-    color:white;
+    color:black;
     text-align:center;
     min-height:400px;
     justify-content:center;
     align-items:center;
     gap:18px;
 }
-.loremm a{
+.wcl-container a{
+    font-size:36px;
+    font-weight:bold;
+}
+.wcl-container p{
+    width:85%;
     font-size:20px;
 }
 .video-container{
-    display:flex;
-    justify-content:center;
-    gap:200px;
-    align-items:center;
-    height:900px;
+    height:100%;
     width:100%;
-   
+ 
 }
-.video-img{
-    height:200px;
-    width:200px;
+.landing-video{
+    width:100%;
+
+}
+.offer-container h2{
+    width:100%;
+}
+.c-header{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:0;
+    height:10px;
+}
+.ms{
+    font-size:25px;
+    text-decoration:underline;
+}
+.bottom-logo{
+    width:20%;
+}
+.social-icon{
+    cursor:pointer;
+    color:#DA3832;
+}
+.social-icon i{
+    font-size:34px;
+}
+@media (max-width:600px){
+    .offer-card{
+        width:100%;
+    }
+    .ms{
+        font-size:16px;
+    }
+    .social-icon i{
+        font-size:25px;
+    }
 }

@@ -1,9 +1,22 @@
 #wrapper{
+    padding:10px;
     width:100%;
     height:100%
 }
+
+
+.background{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image:url("../../../assets/Website_Background.jpg");
+    background-size:cover;
+    position:fixed;
+    z-index:-1;
+}
 .gallery{
-    padding:10px;
+    margin-top:10px;
     height:100%;
     width:100%;
     display:flex;
@@ -12,7 +25,33 @@
     gap:10px;
 }
 .gallery img{
-    height:250px;
-    width:250px;
+    height:100%;
+    width:100%;
     object-fit:cover;
+    border-radius:8px;
+}
+.mm1{
+    width:100%;
+    height:100%;
+    background-color:blue;
+}
+.picture-tiles{
+    border-radius:8px;
+    width:30%;
+    max-height:40%;
+   
+
+
+}
+.shadow{
+        box-shadow: 1px 1px 3px rgb(112, 112, 112); 
+        cursor:pointer;
+
+
+}
+
+@media (max-width:500px){
+.picture-tiles{
+    width:80%;
+}
 }

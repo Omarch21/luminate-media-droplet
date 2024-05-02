@@ -1,19 +1,39 @@
-<div class="wrapper">
-    <header id="header-luminate" class="">
+<mat-drawer-container class="wrapper" autosize>
+  <mat-drawer #drawer class="sidenav" mode="over" >
+    <div class="side-list">
+      <li class="nav-link phone" routerLink="/" (click)="drawer.toggle()">Home</li>
+      <li class="nav-link phone" routerLink="gallery" (click)="drawer.toggle()">Gallery</li>
+      <li class="nav-link phone" routerLink="how-to" (click)="drawer.toggle()">How-To</li>
 
- <div class="header-logo">
-<img src="../assets/Luminate Media Final_-02.png" style="width:180px">
- </div>
-      <div id="header-container">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="gallery">Gallery </a>
-        <a class="nav-link" href="about-us">About us</a>
-        <a class="nav-link" href="#">Contact</a>
-        <a class="nav-link" href="services">Services </a>
-      </div>
-    </header>
-    <main>
+      <li class="nav-link phone" routerLink="contact" (click)="drawer.toggle()">Contact</li>
+      <li class="nav-main-button schedule-phone" href="https://book.luminatechicago.com/order/luminate/book">Schedule a Shoot</li>
+    </div>
+  </mat-drawer>
+  <header id="header-luminate" class="">
+
+    <div class="header-logo">
+      <img src="../assets/Luminate Media Final_-02.png" style="width:180px">
+    </div>
+    <div id="header-container"*ngIf="showHamburgerMenu">
+      <button  type="button" (click)="drawer.toggle()" *ngIf="showHamburgerMenu"><i class="bi bi-list"></i></button>
+      
+    </div>
+    <div id="header-container" *ngIf="!showHamburgerMenu">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="gallery">Gallery </a>
+      <a class="nav-link" href="how-to">How-to</a>
+      <a class="nav-link" href="contact">Contact</a>
+      <a class="nav-main-button" href="https://book.luminatechicago.com/order/luminate/book">Schedule a Shoot </a>
+      
+    </div>
+  </header>
+  <main>
     <router-outlet></router-outlet>
-    </main>
-    <footer>Luminate Chicago 2023</footer>
+  </main>
+  <div id="links" *ngIf="!checkRt()">
+    <p (click)="openDialog()">Terms of Conditions</p>
+    <p routerLink="checklist">Getting Ready Checklist</p>
   </div>
+  <footer>
+    Luminate Chicago 2024</footer>
+</mat-drawer-container>

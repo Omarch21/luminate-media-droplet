@@ -1,0 +1,16 @@
+.underline{
+    text-decoration:underline;
+    font-weight:bold;
+}
+div{
+    padding:10px;
+}
+.bold{
+    font-weight:bold;
+}
+.underlineTitle{
+    text-decoration:underline;
+}
+h2{
+    text-align:center;
+}
