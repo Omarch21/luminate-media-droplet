@@ -5,9 +5,12 @@ import { Component,ElementRef } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent {
+  url: string = '../../../assets/Horizontal Landing.mov';
   constructor(private elRef:ElementRef){}
   ngOnInit(){
+
  const hiddenEl = document.querySelectorAll('.hidden');
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
