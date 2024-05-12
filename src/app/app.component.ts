@@ -9,7 +9,7 @@ import { DialogBoxComponent } from './components/dialog/dialogbox/dialogbox.comp
 })
 export class AppComponent implements OnInit{
   showHamburgerMenu: boolean = false;
-  title = 'luminate-chicago';
+  title = 'luminate-media';
   constructor(private elRef:ElementRef,private dialog: MatDialog,private router: Router){}
   ngOnInit(){
     

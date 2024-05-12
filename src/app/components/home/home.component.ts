@@ -8,9 +8,10 @@ import { Component,ElementRef } from '@angular/core';
 
 export class HomeComponent {
   url: string = '../../../assets/Horizontal Landing.mov';
+  loading: boolean = true;
   constructor(private elRef:ElementRef){}
   ngOnInit(){
-
+    
  const hiddenEl = document.querySelectorAll('.hidden');
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
@@ -36,5 +37,8 @@ export class HomeComponent {
      })
    })
    hiddenEl2.forEach((el)=>observer2.observe(el));
+}
+load(){
+  this.loading = false
 }
 }

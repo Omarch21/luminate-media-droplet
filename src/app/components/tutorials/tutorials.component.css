@@ -7,10 +7,22 @@
     flex-direction:column;
     
 }
-
+.screen{
+    min-width:100%;
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.first{
+    margin-top:20px;
+}
 .tutorial-video{
     width:50%;
     height:80%;
+}
+.last{
+    padding-bottom:10px;
 }
 @media (max-width:600px){
     .tutorial-video{

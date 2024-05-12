@@ -66,9 +66,18 @@ ngOnInit(){
   console.log(this.total);
 }
   openCard(tile:any): void {
+    const maxwidth = window.matchMedia('(max-width: 600px)');
+
+
+    let height = "600px";
+    let width="900px";
+    if(maxwidth.matches){
+      height="35%"
+      width = "80%"
+    }
     this.dialog.open(GalleryCard, {
-      width: '900px',
-      height: '600px',
+      width: width,
+      height: height,
       data: tile
     });
   }
