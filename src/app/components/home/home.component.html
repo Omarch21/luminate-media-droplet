@@ -1,8 +1,9 @@
-<div id="wrapper">
     <div class="background"></div>
+    <div id="wrapper">
+
     <div class="video-container">
-    <video autoplay loop class="landing-video">
-        <source src="../../../assets/Horizontal Landing.mov" type="video/mp4">
+    <video autoplay loop preload="auto" class="landing-video" onloadedmetadata="this.muted=true" (load)="load()" playsinline>
+        <source [src]="url" type="video/mp4">
     </video>
        </div> 
     
@@ -101,6 +102,7 @@
         </div>
         </div>
     -->
+    
     <div class="wcl-container">
         <a>Why Choose Luminate?</a>
         <p>With today’s competitive market, we understand that high-quality visuals are a necessity for agents. Our team consists of professionals sharing both years of experience as well as an eye for detail. Luminate is committed to delivering high quality marketing material to our clients. Our team has streamlined our workflow to make sure both booking & delivery is smooth and stress-free.</p>
@@ -112,7 +114,7 @@
             
             
                 
-                <p class="ms">info@luminatechicago.com</p>
+                <a href="mailto:info@luminatechicago.com" class="ms">info@luminatechicago.com</a>
               
                 
           

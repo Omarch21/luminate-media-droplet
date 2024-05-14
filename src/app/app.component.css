@@ -22,7 +22,7 @@
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    gap:10%;
+    gap:9%;
 
 }
 .hidden{
@@ -43,6 +43,9 @@
     color:#000000;
     cursor:pointer;
     position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .nav-link::before{
     content:'';
@@ -87,6 +90,9 @@ footer{
     align-items:center;
     gap:5%;
 }
+.hamIcon{
+    color:black;
+}
 #links p{
     margin:0;
 }
@@ -103,7 +109,7 @@ footer{
     text-decoration:none;
     border:1px solid #DA3832;
     padding:10px;
-    border-radius:16px;
+    border-radius:15px;
 }
 .nav-main-button:hover{
     transition:all 0.3s;
@@ -128,7 +134,7 @@ footer{
 }
 li{
     width:100%;
-    height:15%;
+    height:10%;
 
     background-color:white;
     text-align:center;
@@ -136,12 +142,13 @@ li{
     vertical-align:middle;
 }
 .phone{
-    border-radius:10px;
+    border-radius:15px;
 }
 .schedule-phone{
     background-color:#DA3832;
     color:white;
     cursor:pointer;
+    text-decoration:none;
 }
 .schedule-phone:hover{
     color:black;
@@ -156,4 +163,20 @@ li{
 #header-container button:hover{
     background-color:#DA3832;
     color:white;
+}
+@media (max-width:600px){
+    .header-logo{
+        width:70%;
+        justify-content:flex-end;
+    }
+    
+    #header-container{
+        width:30%;
+ 
+    }
+
+  #header-container button{
+   
+    width:40%;
+}
 }

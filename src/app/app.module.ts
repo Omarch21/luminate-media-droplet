@@ -16,6 +16,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'
 import { MatCommonModule } from '@angular/material/core';
 import { GalleryCard } from './components/gallery/gallery.component';
 import { DialogBoxComponent } from './components/dialog/dialogbox/dialogbox.component';
@@ -47,7 +48,8 @@ import { TutorialsComponent } from './components/tutorials/tutorials.component';
     MatGridListModule,
     MatDialogModule,MatCommonModule,
     MatSidenavModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
