@@ -14,49 +14,59 @@ export class GalleryComponent implements OnInit{
   constructor(public dialog: MatDialog) { }
   total: number[] = [];
   tiles: Tile[] = [
-    {
-      text: 'one', cols: 2, rows: 2, color: 'white', images: ['../../../assets/gallery1/MAIN.jpg', '../../../assets/gallery1/image1.jpg', '../../../assets/gallery1/image2.jpg', '../../../assets/gallery1/image3.jpg',
-        '../../../assets/gallery1/image4.jpg', '../../../assets/gallery1/image5.jpg', '../../../assets/gallery1/image6.jpg', '../../../assets/gallery1/image7.jpg',
-        '../../../assets/gallery1/image8.jpg', '../../../assets/gallery1/image9.jpg', '../../../assets/gallery1/image10.jpg', '../../../assets/gallery1/image11.jpg',
-        '../../../assets/gallery1/image12.jpg', '../../../assets/gallery1/image13.jpg', '../../../assets/gallery1/image14.jpg', '../../../assets/gallery1/image15.jpg']
-    },
-    { text: 'one1', cols: 2, rows: 2, color: 'white', images: ['../../../assets/340 W Superior Street/MAIN.jpg', '../../../assets/340 W Superior Street/image1.jpg','../../../assets/340 W Superior Street/image2.jpg',
+    { text: 'six', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Parkside/MAIN.jpg','../../../assets/Parkside/photo1.jpg','../../../assets/Parkside/photo2.jpg','../../../assets/Parkside/photo3.jpg',
+    '../../../assets/Parkside/photo4.jpg','../../../assets/Parkside/photo5.jpg','../../../assets/Parkside/photo6.jpg','../../../assets/Parkside/photo7.jpg',
+    '../../../assets/Parkside/photo8.jpg','../../../assets/Parkside/photo9.jpg','../../../assets/Parkside/photo10.jpg','../../../assets/Parkside/photo11.jpg'
+    ] },
+     { text: 'one', cols: 2, rows: 2, color: 'white', images:['../../../assets/kilpatrick_2/photo1.jpg','../../../assets/kilpatrick_2/photo2.jpg','../../../assets/kilpatrick_2/photo3.jpg',
+    '../../../assets/kilpatrick_2/photo4.jpg','../../../assets/kilpatrick_2/photo5.jpg','../../../assets/kilpatrick_2/photo6.jpg','../../../assets/kilpatrick_2/photo7.jpg',
+    '../../../assets/kilpatrick_2/photo8.jpg','../../../assets/kilpatrick_2/photo9.jpg','../../../assets/kilpatrick_2/photo10.jpg','../../../assets/kilpatrick_2/photo11.jpg'
+    ]},
+    
+    { text: 'two', cols: 2, rows: 2, color: 'white', images: ['../../../assets/340 W Superior Street/MAIN.jpg', '../../../assets/340 W Superior Street/image1.jpg','../../../assets/340 W Superior Street/image2.jpg',
     '../../../assets/340 W Superior Street/image3.jpg', '../../../assets/340 W Superior Street/image4.jpg','../../../assets/340 W Superior Street/image5.jpg',
     '../../../assets/340 W Superior Street/image6.jpg', '../../../assets/340 W Superior Street/image7.jpg','../../../assets/340 W Superior Street/image8.jpg','../../../assets/340 W Superior Street/image9.jpg',
     '../../../assets/340 W Superior Street/image10.jpg', '../../../assets/340 W Superior Street/image11.jpg','../../../assets/340 W Superior Street/image12.jpg','../../../assets/340 W Superior Street/image13.jpg',
     '../../../assets/340 W Superior Street/image14.jpg', '../../../assets/340 W Superior Street/image15.jpg']},
 
 
-    { text: 'two', cols: 2, rows: 2, color: 'white', images: ['../../../assets/7845 bristol park/MAIN.jpg','../../../assets/7845 bristol park/image1.jpg','../../../assets/7845 bristol park/image2.jpg',
-    '../../../assets/7845 bristol park/image3.jpg','../../../assets/7845 bristol park/image4.jpg','../../../assets/7845 bristol park/image5.jpg',
-    '../../../assets/7845 bristol park/image6.jpg','../../../assets/7845 bristol park/image7.jpg','../../../assets/7845 bristol park/image8.jpg',
-    '../../../assets/7845 bristol park/image9.jpg','../../../assets/7845 bristol park/image10.jpg','../../../assets/7845 bristol park/image11.jpg','../../../assets/7845 bristol park/image12.jpg'
-     ]},
+   
     { text: 'three', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Ash/main.jpg','../../../assets/Ash/image1.jpg','../../../assets/Ash/image2.jpg',
     '../../../assets/Ash/image3.jpg','../../../assets/Ash/image4.jpg','../../../assets/Ash/image5.jpg','../../../assets/Ash/image6.jpg','../../../assets/Ash/image7.jpg'
 
     ] },
-    { text: 'four', cols: 2, rows: 2, color: 'white', images: ['../../../assets/912 Marshall/MAIN.jpg','../../../assets/912 Marshall/photo1.jpg','../../../assets/912 Marshall/photo2.jpg','../../../assets/912 Marshall/photo3.jpg',
+    { text: 'eleven', cols: 2, rows: 2, color: 'white', images:['../../../assets/Hodges/photo1.jpg','../../../assets/Hodges/photo2.jpg','../../../assets/Hodges/photo3.jpg',
+    '../../../assets/Hodges/photo4.jpg','../../../assets/Hodges/photo5.jpg','../../../assets/Hodges/photo6.jpg','../../../assets/Hodges/photo7.jpg',
+    '../../../assets/Hodges/photo8.jpg','../../../assets/Hodges/photo9.jpg','../../../assets/Hodges/photo10.jpg'
+    ]}, { text: 'eleven', cols: 2, rows: 2, color: 'white', images:['../../../assets/Stimmel/photo1.jpg','../../../assets/Stimmel/photo2.jpg','../../../assets/Stimmel/photo3.jpg',
+    '../../../assets/Stimmel/photo4.jpg','../../../assets/Stimmel/photo5.jpg','../../../assets/Stimmel/photo6.jpg','../../../assets/Stimmel/photo7.jpg',
+    '../../../assets/Stimmel/photo8.jpg','../../../assets/Stimmel/photo9.jpg','../../../assets/Stimmel/photo10.jpg'
+    ]},
+    { text: 'four', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Kilpatric/MAIN.jpg','../../../assets/Kilpatric/photo1.jpg','../../../assets/Kilpatric/photo2.jpg','../../../assets/Kilpatric/photo3.jpg',
+    '../../../assets/Kilpatric/photo4.jpg','../../../assets/Kilpatric/photo5.jpg','../../../assets/Kilpatric/photo6.jpg','../../../assets/Kilpatric/photo7.jpg',
+    '../../../assets/Kilpatric/photo8.jpg','../../../assets/Kilpatric/photo9.jpg','../../../assets/Kilpatric/photo10.jpg'] },
+     { text: '', cols: 2, rows: 2, color: 'white', images:['../../../assets/Russell/photo1.jpg','../../../assets/Russell/photo2.jpg','../../../assets/Russell/photo3.jpg',
+    '../../../assets/Russell/photo4.jpg','../../../assets/Russell/photo5.jpg','../../../assets/Russell/photo6.jpg','../../../assets/Russell/photo7.jpg',
+    '../../../assets/Russell/photo8.jpg','../../../assets/Russell/photo9.jpg','../../../assets/Russell/photo10.jpg'
+    ]},
+    { text: 'five', cols: 2, rows: 2, color: 'white', images: ['../../../assets/912 Marshall/MAIN.jpg','../../../assets/912 Marshall/photo1.jpg','../../../assets/912 Marshall/photo2.jpg','../../../assets/912 Marshall/photo3.jpg',
     '../../../assets/912 Marshall/photo4.jpg','../../../assets/912 Marshall/photo5.jpg','../../../assets/912 Marshall/photo6.jpg','../../../assets/912 Marshall/photo7.jpg',
   
     ] },
-    { text: 'five', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Parkside/MAIN.jpg','../../../assets/Parkside/photo1.jpg','../../../assets/Parkside/photo2.jpg','../../../assets/Parkside/photo3.jpg',
-    '../../../assets/Parkside/photo4.jpg','../../../assets/Parkside/photo5.jpg','../../../assets/Parkside/photo6.jpg','../../../assets/Parkside/photo7.jpg',
-    '../../../assets/Parkside/photo8.jpg','../../../assets/Parkside/photo9.jpg','../../../assets/Parkside/photo10.jpg','../../../assets/Parkside/photo11.jpg'
-    ] },
-    { text: 'six', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Kilpatric/MAIN.jpg','../../../assets/Kilpatric/photo1.jpg','../../../assets/Kilpatric/photo2.jpg','../../../assets/Kilpatric/photo3.jpg',
-    '../../../assets/Kilpatric/photo4.jpg','../../../assets/Kilpatric/photo5.jpg','../../../assets/Kilpatric/photo6.jpg','../../../assets/Kilpatric/photo7.jpg',
-    '../../../assets/Kilpatric/photo8.jpg','../../../assets/Kilpatric/photo9.jpg','../../../assets/Kilpatric/photo10.jpg'] },
-    { text: 'seven', cols: 2, rows: 2, color: 'white', images: ['../../../assets/sangamon/MAIN.jpg','../../../assets/sangamon/photo1.jpg','../../../assets/sangamon/photo2.jpg','../../../assets/sangamon/photo3.jpg',
+   
+    
+   
+    { text: 'eight', cols: 2, rows: 2, color: 'white', images: ['../../../assets/sangamon/MAIN.jpg','../../../assets/sangamon/photo1.jpg','../../../assets/sangamon/photo2.jpg','../../../assets/sangamon/photo3.jpg',
     '../../../assets/sangamon/photo4.jpg','../../../assets/sangamon/photo5.jpg','../../../assets/sangamon/photo6.jpg','../../../assets/sangamon/photo7.jpg',
     '../../../assets/sangamon/photo8.jpg','../../../assets/sangamon/photo9.jpg','../../../assets/sangamon/photo10.jpg',] },
-    { text: 'eight', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Latrobe/MAIN.jpg','../../../assets/Latrobe/photo1.jpg','../../../assets/Latrobe/photo2.jpg','../../../assets/Latrobe/photo3.jpg',
+    { text: 'nine', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Latrobe/MAIN.jpg','../../../assets/Latrobe/photo1.jpg','../../../assets/Latrobe/photo2.jpg','../../../assets/Latrobe/photo3.jpg',
     '../../../assets/Latrobe/photo4.jpg','../../../assets/Latrobe/photo5.jpg','../../../assets/Latrobe/photo6.jpg','../../../assets/Latrobe/photo7.jpg',
     '../../../assets/Latrobe/photo8.jpg','../../../assets/Latrobe/photo9.jpg', '../../../assets/Latrobe/photo10.jpg','../../../assets/Latrobe/photo11.jpg','../../../assets/Latrobe/photo12.jpg',] },
-    { text: 'nine', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Ridgeway/MAIN.jpg','../../../assets/Ridgeway/photo1.jpg','../../../assets/Ridgeway/photo2.jpg','../../../assets/Ridgeway/photo3.jpg',
+    { text: 'ten', cols: 2, rows: 2, color: 'white', images: ['../../../assets/Ridgeway/MAIN.jpg','../../../assets/Ridgeway/photo1.jpg','../../../assets/Ridgeway/photo2.jpg','../../../assets/Ridgeway/photo3.jpg',
     '../../../assets/Ridgeway/photo4.jpg','../../../assets/Ridgeway/photo5.jpg','../../../assets/Ridgeway/photo6.jpg','../../../assets/Ridgeway/photo7.jpg',
-    '../../../assets/Ridgeway/photo8.jpg','../../../assets/Ridgeway/photo9.jpg', '../../../assets/Ridgeway/photo10.jpg','../../../assets/Ridgeway/photo11.jpg',] }
-
+    '../../../assets/Ridgeway/photo8.jpg','../../../assets/Ridgeway/photo9.jpg', '../../../assets/Ridgeway/photo10.jpg','../../../assets/Ridgeway/photo11.jpg',] },
+    
+   
 
   ]
 ngOnInit(){

@@ -34,7 +34,7 @@ const routes: Routes = [
     component: PdfComponent
   },
   {
-    path: 'how-to',
+    path: 'clientTrainingCenter',
     component:TutorialsComponent
   }
 ];

@@ -5,20 +5,23 @@
     <form [formGroup] = "emailForm" class="contact-form" (ngSubmit)="sendEmail()">
        <div class="name-container">
             <div class="input-component">
-                <p><i class="bi bi-info-lg"></i>First Name</p>
+                <p><i class="bi bi-info-lg"></i>First Name<i class="required">*</i></p>
                 <input type="text" name="firstname" id="firstname" formControlName="firstName">
             </div>
             <div class="input-component">
-                <p><i class="bi bi-info-lg"></i>Last Name</p>
+                <p><i class="bi bi-info-lg"></i>Last Name<i class="required">*</i></p>
                 <input type="text" name="lastname" id="lastname" formControlName="lastName">
             </div>
        </div>
        <div class="email-container">
-        <p><i class="bi bi-person" ></i> Email</p>
+        <p><i class="bi bi-person" ></i> Email<i class="required">*</i></p>
             <input type="email" name="email" id="email" formControlName="email">
+            <mat-error>
+            <span *ngIf="emailForm.get('email')?.hasError('email') && emailForm.get('email')?.touched">Email Format</span>
+        </mat-error>
        </div>
        <div class="email-container">
-        <p><i class="bi bi-phone" ></i> Phone Number</p>
+        <p><i class="bi bi-phone" ></i> Phone Number<i class="required">*</i></p>
             <input type="text" name="phoneNumber" id="phoneNumber" formControlName="phoneNumber">
        </div>
        <div class="container1">
@@ -26,7 +29,7 @@
             <input type="text" name="subject" id="subject" formControlName="subject">
        </div>
        <div class="message-container">
-        <p><i class="bi bi-chat-right-text"></i> Message</p>
+        <p><i class="bi bi-chat-right-text"></i> Message<i class="required">*</i></p>
             <textarea formControlName="body"></textarea>
        </div>
        <button mat-button class="send-email" type="submit" id="email-button" [disabled]="emailForm.invalid">Send Email <i class="bi bi-envelope-arrow-up" ></i></button>

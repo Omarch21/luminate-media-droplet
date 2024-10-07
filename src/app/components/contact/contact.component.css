@@ -143,3 +143,6 @@ textarea{
             height:25%;
         }
     }
+    .required{
+        color:#DA3832;
+    }

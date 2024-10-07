@@ -1,6 +1,7 @@
 export class Email{
-    name = ""
-    email = "";
+    firstName = "";
+    lastName = "";
+    from = "";
     phoneNumber = "";
     subject = "";
     body = "";

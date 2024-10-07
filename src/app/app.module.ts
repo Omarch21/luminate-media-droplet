@@ -23,6 +23,8 @@ import { DialogBoxComponent } from './components/dialog/dialogbox/dialogbox.comp
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PdfComponent } from './components/pdf/pdf.component';
 import { TutorialsComponent } from './components/tutorials/tutorials.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,8 @@ import { TutorialsComponent } from './components/tutorials/tutorials.component';
     MatDialogModule,MatCommonModule,
     MatSidenavModule,
     PdfViewerModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

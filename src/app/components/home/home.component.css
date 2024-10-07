@@ -169,7 +169,6 @@ h2{
     flex-direction:column;
     text-align:center;
     height:400px;
-    background: url("../../../assets/prism.png");
     padding:10px;
     align-items:center;
 }

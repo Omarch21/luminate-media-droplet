@@ -9,6 +9,6 @@ export class EmailService {
 
   constructor(private http: HttpClient) { }
   public sendEmail(email: Email){
-    return this.http.post<Email>("https://localhost:7253/Email/send",email);
+    return this.http.post<Email>("https://luminate-media-backend-zdioojniha-uc.a.run.app/api/email",email);
   }
 }

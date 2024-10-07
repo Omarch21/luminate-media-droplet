@@ -7,7 +7,7 @@ import { Component,ElementRef } from '@angular/core';
 })
 
 export class HomeComponent {
-  url: string = '../../../assets/Horizontal Landing.mov';
+  url: string = 'https://storage.googleapis.com/luminate_media_bucket_1/Horizontal%20Landing.mov';
   loading: boolean = true;
   constructor(private elRef:ElementRef){}
   ngOnInit(){

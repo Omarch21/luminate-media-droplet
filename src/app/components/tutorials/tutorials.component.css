@@ -29,4 +29,7 @@
         width: 80%;
         height:50%;
     }
+    #tutorial-body{
+        height:80vh;
+    }
 }

@@ -14,7 +14,7 @@ ngOnInit(){
   this.emailForm = this.formBuilder.group({
     firstName: ['',Validators.required],
     lastName: ['',Validators.required],
-    email: ['',Validators.required],
+    email: ['',[Validators.required,Validators.email]],
     phoneNumber: ['',Validators.required],
     subject: ['',Validators.required],
     body: ['',Validators.required],
@@ -23,10 +23,11 @@ ngOnInit(){
 }
 sendEmail(){
 if(this.emailForm.valid){
-  const name = this.emailForm.value.firstName + " " + this.emailForm.value.lastName;
   const email = new Email();
-  email.name = name;
-  email.email = this.emailForm.value.email;
+  email.firstName = this.emailForm.value.firstName
+  email.lastName = this.emailForm.value.lastName
+
+  email.from = this.emailForm.value.email;
   email.phoneNumber = this.emailForm.value.phoneNumber;
   email.subject = this.emailForm.value.subject;
   email.body = this.emailForm.value.body;
